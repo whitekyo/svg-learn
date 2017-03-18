@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rounded-rectangles</title>
+</head>
+<body>
+<svg width="200px" height="200px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- rx和ry相等，逐渐增大 -->
+    <rect x="10" y="10" width="30" height="50" rx="2" ry="2"></rect>
+    <!-- 内部不填充颜色，绘制黑色边框 -->
+    <rect x="50" y="10" width="20" height="40" style="fill: none; stroke: black;" rx="5"></rect>
+    <!-- rx和ry不相等 -->
+    <rect x="10" y="70" width="25" height="30" rx="10" ry="5" style="fill: #0000ff; stroke: red; stroke-width: 7; stroke-opacity: .5;"></rect>
+
+    <rect x="50" y="70" width="35" height="20" rx="5" ry="10" style="fill: yellow; stroke-dasharray: 5, 2; stroke: green; stroke-width: 2; fill-opacity: .5;"></rect>
+</svg>
+</body>
+</html>
