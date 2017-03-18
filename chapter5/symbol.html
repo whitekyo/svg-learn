@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>symbol</title>
+</head>
+<body>
+<svg width="200px" height="200px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <title>Group Drawing</title>
+    <desc>Stick-figure drawings of a house and people</desc>
+    <defs>
+        <g id="octagon" style="stroke: black;">
+            <desc>Octagon as group</desc>
+            <polygon points="36 25, 25 36, 11 36, 0 25, 0 11, 11 0, 25 0, 36 11"></polygon>
+        </g>
+        <symbol id="sym-octagon" style="stroke: black;" preserveAspectRatio="xMidYMid slice" viewBox="0 0 40 40">
+            <desc>Octagon as symbol</desc>
+            <polygon points="36 25, 25 36, 11 36, 0 25, 0 11, 11 0, 25 0, 36 11"></polygon>
+        </symbol>
+    </defs>
+
+    <g style="fill: none; stroke: gray;">
+        <rect x="40" y="40" width="30" height="30"></rect>
+        <rect x="80" y="40" width="40" height="60"></rect>
+        <rect x="40" y="110" width="30" height="30"></rect>
+        <rect x="80" y="110" width="40" height="60"></rect>
+    </g>
+
+    <use xlink:href="#octagon" x="40" y="40" width="30" height="30" style="fill: #c00;"></use>
+    <use xlink:href="#octagon" x="80" y="40" width="40" height="60" style="fill: #cc0;"></use>
+    <use xlink:href="#sym-octagon" x="40" y="110" width="30" height="30" style="fill: #cfc;"></use>
+    <use xlink:href="#sym-octagon" x="80" y="110" width="40" height="60" style="fill: #699;"></use>
+
+
+
+    <!--<use xlink:href="#house" x="0" y="0" style="fill: #cfc;"></use>-->
+    <!--<use xlink:href="#couple" x="70" y="40"></use>-->
+    <!--<use xlink:href="#house" x="120" y="0" style="fill: #99f;"></use>-->
+    <!--<use xlink:href="#couple" x="190" y="40"></use>-->
+    <!--<use xlink:href="#woman" x="0" y="145"></use>-->
+    <!--<use xlink:href="#man" x="25" y="145"></use>-->
+    <!--<use xlink:href="#house" x="65" y="105" style="fill: #c00;"></use>-->
+</svg>
+</body>
+</html>

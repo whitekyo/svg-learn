@@ -1,0 +1,6 @@
+circle {
+    fill: #ffc;
+    stroke: blue;
+    stroke-width: 2;
+    stroke-dasharray: 5 3;
+}
